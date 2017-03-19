@@ -1,0 +1,22 @@
+{
+  "name": "qwe",
+  "version": "1.2.3",
+  "description": ":)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pesHuecoc",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "asdas"
+  },
+  "keywords": [
+    "ewqed"
+  ],
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-watch": "^4.3.11"
+  }
+}

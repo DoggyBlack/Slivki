@@ -1,17 +1,86 @@
-extends layout
-
-block link
-  link(rel="stylesheet" href="reset.css")
-  link(rel="stylesheet" href="index.css")
-  link(rel="stylesheet" href="style.css")
-block title
-  title homepage
-block content
-  .information
-
-      
-block footer
-  
-block script
-  script(src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
-  script(src="ajax.js")
+html
+  head
+    meta(charset="utf-8")
+    link(rel="stylesheet" href="reset.css")
+    link(rel="stylesheet" href="style.css")
+    title Slivki
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js")
+  body
+    .background.background_main#background
+    
+      .calculation#calculation-content
+        input(type="text" placeholder="Ваше имя").calculation-item
+        input(type="email" placeholder="Ваш e-mail").calculation-item
+        input(type="text" placeholder="+7(123)45-67-89").calculation-item
+        .calculation__request Оставить заявку
+        .calculation__close#close Закрыть
+    
+      .mobile-menu#content
+        ul.list
+          li.list-item
+            a(href="#") О нас
+          li.list-item
+            a(href="#") Кейсы
+          li.list-item
+            a(href="#") Команда
+          li.list-item
+            a(href="#") Бриф
+          li.list-item
+            a(href="#") Услуги
+          li.list-item
+            a(href="#") FAQ
+          li.list-item
+            a(href="#") Контакты
+        
+        .mobile-menu__logos
+          a(href="#")
+            img.mobile-menu__image(src="img/inst.png")
+          a(href="#")
+            img.mobile-menu__image(src="img/face.png")
+          a(href="#")
+            img.mobile-menu__image(src="img/vk.png")
+          a(href="#")
+            img.mobile-menu__image(src="img/you.png")
+          a(href="#")
+            img.mobile-menu__image(src="img/beh.png")   
+      .wrapper
+        .header
+          .header__item-wrapper
+            .header__menu#menu
+              .header__burger-row
+              .header__burger-row
+              .header__burger-row
+          .header__item-wrapper
+            .header__logo.display.display_center
+          .header__item-wrapper
+            .header__contacts.display.display_right
+              .header__numbers
+                |+38 066 631 36 41
+                br
+                |+7 495 133 92 19
+                br
+              .header__schedule
+                |Пн-Сб 10.00 до 19.00
+        .content
+          h1.content__heading 
+            |Лендинг Пейдж для бизнеса с гарантией
+            br
+            |потока заявок от 3 до 
+            span 80
+            |  ежедневно
+          p.content__paragraph
+            |Узнайте сколько клиентов Вы получите в следующем месяце
+          .content__button#calculation Получить расчет
+        .footer
+          .footer__logos
+            img.footer__image(src="img/kaza.png")
+            img.footer__image(src="img/allo.png")
+            img.footer__image(src="img/1-c.png")
+            img.footer__image(src="img/alfa.png")
+            img.footer__image(src="img/bosch.png")
+            img.footer__image(src="img/kia.png")
+            img.footer__image(src="img/np.png")
+            img.footer__image(src="img/zara.svg")
+            img.footer__image(src="img/voda.svg")
+            img.footer__image(src="img/loreal.png")
+    script(src="main.js")

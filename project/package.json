@@ -1,22 +1,22 @@
 {
-  "name": "qwe",
+  "name": "Slivki",
   "version": "1.2.3",
-  "description": ":)",
-  "main": "index.js",
+  "description": "Test",
+  "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "pesHuecoc",
+  "author": "Andrew",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "asdas"
+    "url": ""
   },
-  "keywords": [
-    "ewqed"
-  ],
   "devDependencies": {
     "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-rigger": "^0.5.8",
+    "gulp-uglify": "^2.1.2",
     "gulp-watch": "^4.3.11"
   }
 }

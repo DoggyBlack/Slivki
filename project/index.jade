@@ -1,6 +1,7 @@
 html
   head
     meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel="stylesheet" href="reset.css")
     link(rel="stylesheet" href="style.css")
     title Slivki
@@ -9,9 +10,9 @@ html
     .background.background_main#background
     
       .calculation#calculation-content
-        input(type="text" placeholder="Ваше имя").calculation-item
-        input(type="email" placeholder="Ваш e-mail").calculation-item
-        input(type="text" placeholder="+7(123)45-67-89").calculation-item
+        input(type="text" placeholder="Ваше имя").calculation__item.calculation__item-user
+        input(type="email" placeholder="Ваш e-mail").calculation__item.calculation__item-mail
+        input(type="text" placeholder="+7(123)45-67-89").calculation__item.calculation__item-phone
         .calculation__request Оставить заявку
         .calculation__close#close Закрыть
     
@@ -72,7 +73,7 @@ html
             |Узнайте сколько клиентов Вы получите в следующем месяце
           .content__button#calculation Получить расчет
         .footer
-          .footer__logos
+          .footer__logos#slide
             img.footer__image(src="img/kaza.png")
             img.footer__image(src="img/allo.png")
             img.footer__image(src="img/1-c.png")
@@ -83,4 +84,7 @@ html
             img.footer__image(src="img/zara.svg")
             img.footer__image(src="img/voda.svg")
             img.footer__image(src="img/loreal.png")
+          .footer__points
+            .footer__left-point.active
+            .footer__right-point
     script(src="main.js")
